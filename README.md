@@ -1,10 +1,9 @@
-# Astro CUBE CSS Boilerplate testing Tailwind CSS v4.0 alpha
+# Astro CUBE
 
 Fork of [Astro CUBE Boilerplate](https://github.com/frankstallone/astro-cube-boilerplate).
 
-## TODO/TOFIX
+## TODO/TO-FIX
 
-- [x] Replace all tokens, now added in `./src/css/variables/*`.
 - [ ] Tailwind's media query function `screen()`, found in `./src/css/components/grid.css`, currently doesn't work in v4.0.0-alpha.7.
 - [ ] Add utilities, inc: region-space, flow-space, and gutter. `tailwind.config.mjs` doesn't do anything at this time.
 
