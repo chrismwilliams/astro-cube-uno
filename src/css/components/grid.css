@@ -46,15 +46,14 @@ to change how empty grid tracks are handled */
   grid-template-columns: 100%;
 }
 
-/* ! Doesn't work in tailwind@4.0.0-alpha.14 */
-/* @media screen(md) {
+@media (width >= theme(--breakpoint-md)) {
   .grid[data-layout="lg:10/2"] {
     grid-template-columns: clamp(40rem, 80vw, 60rem);
   }
 }
 
-@media screen(lg) {
+@media (width >= theme(--breakpoint-lg)) {
   .grid[data-layout="lg:10/2"] {
     grid-template-columns: 10fr 2fr;
   }
-} */
+}
