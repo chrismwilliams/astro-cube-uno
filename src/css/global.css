@@ -1,0 +1,29 @@
+@import "global/reset.css";
+@import "global/fonts.css";
+
+/* Would be nice to use @import "variables/*.css" layer(theme), but 🤷 */
+@import "variables/breakpoints.css";
+@import "variables/colors.css";
+@import "variables/fonts.css";
+@import "variables/spacing.css";
+@import "variables/text-leading.css";
+@import "variables/text-sizes.css";
+@import "variables/text-weight.css";
+
+@import "global/variables.css";
+@import "global/global-styles.css";
+
+@import "blocks/prose.css" layer(components);
+@import "components/box.css" layer(components);
+@import "components/cluster.css" layer(components);
+@import "components/flow.css" layer(components);
+@import "components/grid.css" layer(components);
+@import "components/icon.css" layer(components);
+@import "components/repel.css" layer(components);
+@import "components/sidebar.css" layer(components);
+@import "components/switcher.css" layer(components);
+@import "components/wrapper.css" layer(components);
+@import "utilities/region.css" layer(components);
+@import "utilities/visually-hidden.css" layer(components);
+
+@import "tailwindcss/utilities" layer(utilities);
