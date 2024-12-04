@@ -6,6 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   integrations: [sitemap()],
   vite: {
+    // @ts-ignore
     plugins: [tailwindcss()],
     css: {
       transformer: "lightningcss",
