@@ -1,15 +1,10 @@
 # Astro CUBE
 
-Fork of [Astro CUBE Boilerplate](https://github.com/frankstallone/astro-cube-boilerplate).
+Based on the [CUBE CSS Boilerplate](https://github.com/Set-Creative-Studio/cube-boilerplate). Uses Astro v5 and Tailwind CSS v4.0 Beta.
 
-## TODO/TO-FIX
-
-- [ ] Tailwind's media query function `screen()`, found in `./src/css/components/grid.css`, currently doesn't work in v4.0.0-alpha.7.
-- [ ] Add utilities, inc: region-space, flow-space, and gutter. `tailwind.config.mjs` doesn't do anything at this time.
+Uses Tailwind's `@theme` config rather than `.json` design-tokens, found in `src/css/theme/*.css`
 
 ## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
 
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
