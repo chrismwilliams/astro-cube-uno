@@ -4,7 +4,7 @@ Based on the [CUBE CSS Boilerplate](https://github.com/Set-Creative-Studio/cube-
 
 Uses Tailwind's `@theme` config rather than `.json` design-tokens, found in `src/css/theme/*.css`
 
-## 🧞 Commands
+## Commands
 
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
