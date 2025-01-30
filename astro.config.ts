@@ -4,9 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://astro-cube.pages.dev",
   integrations: [sitemap()],
   vite: {
-    // @ts-ignore
     plugins: [tailwindcss()],
     css: {
       transformer: "lightningcss",
