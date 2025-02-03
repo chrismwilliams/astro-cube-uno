@@ -1,0 +1,21 @@
+{
+  "title": "Colors",
+  "items": [
+    {
+      "name": "Transparent",
+      "value": "transparent"
+    },
+    {
+      "name": "Dark",
+      "value": "#000"
+    },
+    {
+      "name": "Light",
+      "value": "#f3f4f6"
+    },
+    {
+      "name": "Primary",
+      "value": "#52525c"
+    }
+  ]
+}

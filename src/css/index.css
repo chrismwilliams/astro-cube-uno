@@ -1,14 +1,14 @@
-@layer theme, base, components, utilities;
+@layer reset, tailwind;
 
-@import "tailwindcss/theme" layer(theme);
-@import "./theme/index.css" layer(theme);
-
+@import "tailwindcss/base" layer(tailwind.base);
 @import "./global/reset.css" layer(base);
-@import "./global/font-face.css" layer(base);
 @import "./global/global-styles.css" layer(base);
+@import "./global/font-face.css" layer(base);
 
+@import "tailwindcss/components" layer(tailwind.components);
 @import "./blocks/index.css" layer(components);
-@import "./components/index.css" layer(components);
+@import "./compositions/index.css" layer(components);
 @import "./utilities/index.css" layer(components);
 
-@import "tailwindcss/utilities" layer(utilities);
+@import "blocks/index.css";
+@import "tailwindcss/utilities";

@@ -1,0 +1,59 @@
+{
+  "title": "Text Sizes",
+  "description": "A minimum and maximum text size size allows you to pick the right size from a ratio, depending on the context size. The min and max sizes are in pixels and should be converted to appropriate sizes, per context. For example, for web, it should be converted to REM units (pixelSize / baseSize)",
+  "meta": {
+    "scaleGenerator": "https://utopia.fyi/type/calculator/?c=330,16,1.175,1200,20,1.25,7,1,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12"
+  },
+  "items": [
+    {
+      "name": "Step 000",
+      "min": 13.04,
+      "max": 15.36
+    },
+    {
+      "name": "Step 00",
+      "min": 15.32,
+      "max": 19.2
+    },
+    {
+      "name": "Step 0",
+      "min": 18,
+      "max": 24
+    },
+    {
+      "name": "Step 1",
+      "min": 21.15,
+      "max": 30
+    },
+    {
+      "name": "Step 2",
+      "min": 24.85,
+      "max": 37.5
+    },
+    {
+      "name": "Step 3",
+      "min": 29.2,
+      "max": 46.88
+    },
+    {
+      "name": "Step 4",
+      "min": 34.31,
+      "max": 58.59
+    },
+    {
+      "name": "Step 5",
+      "min": 40.31,
+      "max": 73.24
+    },
+    {
+      "name": "Step 6",
+      "min": 47.37,
+      "max": 91.55
+    },
+    {
+      "name": "Step 7",
+      "min": 55.66,
+      "max": 114.44
+    }
+  ]
+}
