@@ -29,19 +29,43 @@ const lineHeight = tokensToTailwind(textLeadingTokens.items);
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    backgroundColor: ({ theme }) => theme("colors"),
+    borderColor: ({ theme }) => theme("colors"),
+    colors,
     fontFamily,
-    fontWeight,
     fontSize,
+    fontWeight,
     lineHeight,
-    spacing,
-    extend: {
-      colors,
-    },
     margin: ({ theme }) => ({
       auto: "auto",
       ...theme("spacing"),
     }),
     padding: ({ theme }) => theme("spacing"),
+    spacing,
+    textColor: ({ theme }) => theme("colors"),
+  },
+  experimental: {
+    optimizeUniversalDefaults: true,
+  },
+  corePlugins: {
+    // Disables Tailwind's reset
+    preflight: false,
+    borderColor: false,
+    borderOpacity: false,
+    borderSpacing: false,
+    boxShadow: false,
+    display: false,
+    filter: false,
+    fontVariantNumeric: false,
+    backdropFilter: false,
+    ringWidth: false,
+    ringColor: false,
+    ringOffsetWidth: false,
+    ringOffsetColor: false,
+    textOpacity: false,
+    transform: false,
+    touchAction: false,
+    scrollSnapType: false,
   },
   plugins: [
     // Generates custom property values from tailwind config
