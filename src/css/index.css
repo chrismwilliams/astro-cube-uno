@@ -1,7 +1,7 @@
 @layer reset, tailwind;
 
+@import "./global/reset.css" layer(reset);
 @import "tailwindcss/base" layer(tailwind.base);
-@import "./global/reset.css" layer(base);
 @import "./global/global-styles.css" layer(base);
 @import "./global/font-face.css" layer(base);
 
