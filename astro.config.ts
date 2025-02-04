@@ -9,4 +9,7 @@ export default defineConfig({
     sitemap(),
     tailwind({ applyBaseStyles: false, nesting: true }),
   ],
+  build: {
+    inlineStylesheets: "never",
+  },
 });

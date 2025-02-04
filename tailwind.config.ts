@@ -41,6 +41,11 @@ export default {
       ...theme("spacing"),
     }),
     padding: ({ theme }) => theme("spacing"),
+    screens: {
+      sm: `${viewports.min}px`,
+      md: `${viewports.mid}px`,
+      lg: `${viewports.max}px`,
+    },
     spacing,
     textColor: ({ theme }) => theme("colors"),
   },
@@ -73,11 +78,12 @@ export default {
       const currentConfig = config();
 
       const groups = [
-        { key: "fontFamily", prefix: "font" },
-        { key: "spacing", prefix: "space" },
-        { key: "fontSize", prefix: "size" },
         { key: "colors", prefix: "color" },
+        { key: "fontFamily", prefix: "font" },
+        { key: "fontSize", prefix: "size" },
         { key: "fontWeight", prefix: "font" },
+        { key: "lineHeight", prefix: "leading" },
+        { key: "spacing", prefix: "space" },
       ];
 
       const cssVars: Record<string, string> = {};
