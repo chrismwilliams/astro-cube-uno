@@ -1,5 +1,5 @@
-import { defineConfig, transformerDirectives } from "unocss";
-import presetWind from "@unocss/preset-wind";
+import { defineConfig, transformerDirectives, presetMini } from "unocss";
+// import presetWind from "@unocss/preset-wind";
 import {
   tokensToTailwind as tokensToUno,
   clampGenerator,
@@ -22,11 +22,11 @@ const spacing = tokensToUno(clampGenerator(spacingTokens.items, viewports));
 const fontSize = tokensToUno(clampGenerator(textSizeTokens.items, viewports));
 const lineHeight = tokensToUno(textLeadingTokens.items);
 
-// ! TODO: 1) Remove UnoCSS preflight. 2) Add CUBE.css
+// ! TODO: Add CUBE.css
 
 export default defineConfig({
   transformers: [transformerDirectives()],
-  presets: [presetWind()],
+  presets: [presetMini({ preflight: "on-demand" })],
   theme: {
     colors,
     fontFamily: Object.fromEntries(
@@ -47,6 +47,7 @@ export default defineConfig({
   },
   preflights: [
     {
+      layer: "base",
       getCSS: () => {
         const groups = [
           { prefix: "color", tokens: colors },
@@ -56,7 +57,7 @@ export default defineConfig({
           { prefix: "leading", tokens: lineHeight },
           { prefix: "space", tokens: spacing },
         ];
-        let cssVars: string = "";
+        let cssVars = "";
 
         for (const { prefix, tokens } of groups) {
           if (!tokens) continue;
@@ -74,11 +75,20 @@ export default defineConfig({
     },
   ],
   rules: [
-    [/^flow-space-(.+)$/, ([, d]) => ({ "--flow-space": `var(--space-${d})` })],
+    [
+      /^flow-space-(.+)$/,
+      ([, d]) => ({ "--flow-space": `var(--space-${d})` }),
+      { layer: "components" },
+    ],
     [
       /^region-space-(.+)$/,
       ([, d]) => ({ "--region-space": `var(--space-${d})` }),
+      { layer: "components" },
     ],
-    [/^gutter-(.+)$/, ([, d]) => ({ "--gutter": `var(--space-${d})` })],
+    [
+      /^gutter-(.+)$/,
+      ([, d]) => ({ "--gutter": `var(--space-${d})` }),
+      { layer: "components" },
+    ],
   ],
 });

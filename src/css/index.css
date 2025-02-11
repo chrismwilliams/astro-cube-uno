@@ -1,14 +1,3 @@
-@layer reset, tailwind;
-
-@import "./global/reset.css" layer(reset);
-@import "tailwindcss/base" layer(tailwind.base);
-@import "./global/global-styles.css" layer(base);
-@import "./global/font-face.css" layer(base);
-
-@import "tailwindcss/components" layer(tailwind.components);
-@import "./blocks/index.css" layer(components);
-@import "./compositions/index.css" layer(components);
-@import "./utilities/index.css" layer(components);
-
-@import "blocks/index.css";
-@import "tailwindcss/utilities";
+@import "./blocks/index.css";
+@import "./compositions/index.css";
+@import "./utilities/index.css";
