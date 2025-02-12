@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     sitemap(),
     UnoCSS({
-      injectReset: "src/css/global/index.css",
+      injectReset: false,
     }),
   ],
   build: {
