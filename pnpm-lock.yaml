@@ -24,9 +24,6 @@ importers:
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
-      '@unocss/preset-wind':
-        specifier: ^65.4.3
-        version: 65.4.3
       prettier:
         specifier: ^3.4.2
         version: 3.4.2

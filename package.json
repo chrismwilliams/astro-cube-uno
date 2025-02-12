@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@unocss/preset-wind": "^65.4.3",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
     "typescript": "^5.7.3",
